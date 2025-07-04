@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products | Premium Store</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Premium Store</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="all-products">
+        <h1>All Products</h1>
+        <div class="search-filter">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+          />
+          <select id="price-filter">
+            <option value="">All Prices</option>
+            <option value="0-500">Under $500</option>
+            <option value="500-1000">$500 - $1000</option>
+            <option value="1000-">Above $1000</option>
+          </select>
+        </div>
+        <div class="products-container" id="all-products">
+          <!-- Products loaded via JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Premium Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/products.js"></script>
+  </body>
+</html>

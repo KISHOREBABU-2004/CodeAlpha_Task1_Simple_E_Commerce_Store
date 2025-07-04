@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart | Premium Store</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Premium Store</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart-section">
+        <h1>Your Shopping Cart</h1>
+
+        <div class="cart-container">
+          <div class="cart-items" id="cart-items">
+            <!-- Cart items will be loaded via JavaScript -->
+            <div class="empty-cart">Your cart is empty</div>
+          </div>
+
+          <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-details">
+              <p>Subtotal: <span id="subtotal">$0.00</span></p>
+              <p>Shipping: <span id="shipping">$5.00</span></p>
+              <p class="total">Total: <span id="total">$5.00</span></p>
+            </div>
+            <a href="checkout.html" class="btn checkout-btn"
+              >Proceed to Checkout</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Premium Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>
